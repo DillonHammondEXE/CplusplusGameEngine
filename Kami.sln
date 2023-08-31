@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33026.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{ACBA7C40-A13C-49AF-BB5C-2D2275FC0C6F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kami", "Kami\Kami.vcxproj", "{F5F297B4-2FC1-4F3B-ADCC-F6DB1FC13398}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F297B4-2FC1-4F3B-ADCC-F6DB1FC13398}.Debug|x64.ActiveCfg = Debug|x64
+		{F5F297B4-2FC1-4F3B-ADCC-F6DB1FC13398}.Debug|x64.Build.0 = Debug|x64
+		{F5F297B4-2FC1-4F3B-ADCC-F6DB1FC13398}.Release|x64.ActiveCfg = Release|x64
+		{F5F297B4-2FC1-4F3B-ADCC-F6DB1FC13398}.Release|x64.Build.0 = Release|x64
+		{ACBA7C40-A13C-49AF-BB5C-2D2275FC0C6F}.Debug|x64.ActiveCfg = Debug|x64
+		{ACBA7C40-A13C-49AF-BB5C-2D2275FC0C6F}.Debug|x64.Build.0 = Debug|x64
+		{ACBA7C40-A13C-49AF-BB5C-2D2275FC0C6F}.Release|x64.ActiveCfg = Release|x64
+		{ACBA7C40-A13C-49AF-BB5C-2D2275FC0C6F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10FADE84-F081-45B8-A491-A8BF45BCD1A5}
+	EndGlobalSection
+EndGlobal
