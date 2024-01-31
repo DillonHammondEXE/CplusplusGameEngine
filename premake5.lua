@@ -10,6 +10,12 @@ workspace "Kami"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Kami/vendor/GLFW/include"
+
+include "Kami/vendor/GLFW"
+
 project "Kami"
 	location "Kami"
 	kind "SharedLib"  
@@ -17,6 +23,9 @@ project "Kami"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	
+	pchheader "kmpch.h"
+	pchsource "Kami/src/kmpch.cpp"
 
 	files
 	{
@@ -28,7 +37,13 @@ project "Kami"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"Kami/src"
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

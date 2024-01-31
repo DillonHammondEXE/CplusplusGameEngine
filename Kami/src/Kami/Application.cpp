@@ -1,3 +1,4 @@
+#include "kmpch.h"
 #include "Application.h"
 
 #include "Kami/Events/ApplicationEvent.h"
@@ -5,25 +6,19 @@
 
 namespace Kami {
 
-	Application::Application() {}
+	Application::Application() 
+	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
+	}
 
 	Application::~Application() {}
 
 
 	void Application::Run()
 	{
-		KM_INFO("This is the application!");
-		WindowResizeEvent e(1280, 720);
-
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			KM_TRACE(e);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			KM_TRACE(e);
-		}
-
-		while (true);
 	}
 }

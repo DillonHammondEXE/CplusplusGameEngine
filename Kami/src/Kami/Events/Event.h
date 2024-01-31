@@ -1,9 +1,6 @@
 #pragma once
-
+#include "kmpch.h" // I ADDED THIS ON MY OWN TEMPORARY FIX?
 #include "Kami/Core.h"
-
-#include <string>
-#include <functional> // want to add precompiled headers later and remove this
 
 namespace Kami {
 

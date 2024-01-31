@@ -7,6 +7,12 @@
     <Filter Include="Kami\Events">
       <UniqueIdentifier>{0BF905D1-77AE-7EC6-00A3-789D6C5775CA}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Kami.h" />
@@ -37,6 +43,13 @@
     <ClInclude Include="src\Kami\Log.h">
       <Filter>Kami</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kami\Window.h">
+      <Filter>Kami</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kmpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kami\Application.cpp">
@@ -45,5 +58,9 @@
     <ClCompile Include="src\Kami\Log.cpp">
       <Filter>Kami</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kmpch.cpp" />
   </ItemGroup>
 </Project>

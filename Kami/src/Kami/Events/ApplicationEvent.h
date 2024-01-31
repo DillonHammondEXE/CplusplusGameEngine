@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Kami {
 
 	class KAMI_API WindowResizeEvent : public Event
