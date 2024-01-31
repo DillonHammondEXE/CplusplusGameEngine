@@ -6,3 +6,4 @@ https://www.youtube.com/watch?v=W3gAzLwfIP0&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GG
 https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT&ab_channel=TheCherno
 Inspiration: 
 https://www.youtube.com/@t3ssel8r/videos
+Currently working on event system.
