@@ -4,6 +4,8 @@
 #include "Kami/Events/ApplicationEvent.h"
 #include "Kami/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Kami {
 
 	Application::Application() 
@@ -18,6 +20,8 @@ namespace Kami {
 	{
 		while (m_Running)
 		{
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
 			m_Window->OnUpdate();
 		}
 	}
