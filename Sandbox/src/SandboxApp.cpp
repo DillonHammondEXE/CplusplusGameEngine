@@ -1,16 +1,39 @@
 #include <Kami.h>
 
-class Sandbox : public Kami::Application {
+class ExampleLayer : public Kami::Layer
+{
 public:
-	Sandbox() {
-
+	ExampleLayer()
+		: Layer("Example")
+	{
 	}
 
-	~Sandbox() {
+	void OnUpdate() override
+	{
+		KM_INFO("ExampleLayer::Update");
+	}
+
+	void OnEvent(Kami::Event& event) override
+	{
+		KM_TRACE("{0}", event);
+	}
+
+};
+
+class Sandbox : public Kami::Application {
+public:
+	Sandbox()
+	{
+		PushLayer(new ExampleLayer());
+	}
+
+	~Sandbox()
+	{
 
 	}
 };
 
-Kami::Application* Kami::CreateApplication() {
+Kami::Application* Kami::CreateApplication()
+{
 	return new Sandbox();
 }

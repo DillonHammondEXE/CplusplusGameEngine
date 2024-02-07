@@ -40,6 +40,12 @@
     <ClInclude Include="src\Kami\Kami.h">
       <Filter>Kami</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kami\Layer.h">
+      <Filter>Kami</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Kami\LayerStack.h">
+      <Filter>Kami</Filter>
+    </ClInclude>
     <ClInclude Include="src\Kami\Log.h">
       <Filter>Kami</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kami\Application.cpp">
+      <Filter>Kami</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kami\Layer.cpp">
+      <Filter>Kami</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kami\LayerStack.cpp">
       <Filter>Kami</Filter>
     </ClCompile>
     <ClCompile Include="src\Kami\Log.cpp">
