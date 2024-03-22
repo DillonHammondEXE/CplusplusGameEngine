@@ -13,8 +13,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Kami/vendor/GLFW/include"
+IncludeDir["Glad"] = "Kami/vendor/Glad/include"
 
 include "Kami/vendor/GLFW"
+include "Kami/Vendor/Glad"
+
 
 project "Kami"
 	location "Kami"
@@ -37,12 +40,14 @@ project "Kami"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +59,8 @@ project "Kami"
 	defines
 	{
 		"KM_PLATFORM_WINDOWS",
-		"KM_BUILD_DLL"
+		"KM_BUILD_DLL",
+		"GLFW_INCLUDE_NONE"
 	}
 	
 	postbuildcommands

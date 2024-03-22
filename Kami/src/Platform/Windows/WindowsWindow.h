@@ -4,6 +4,7 @@
 
 #include <GLFW/glfw3.h>
 
+
 namespace Kami {
 
 	class WindowsWindow : public Window
