@@ -1,5 +1,5 @@
-# W.I.P Kami C++ Game Engine (Working on Layers)
-OpenGL based game engine with the goal to easily create 3d pixel art games.
+# W.I.P Kami C++ Game Engine
+OpenGL based game engine with the goal to easily create 2d pixel art games.
 Resources used:
 https://learnopengl.com/
 https://www.youtube.com/watch?v=W3gAzLwfIP0&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&ab_channel=TheCherno
